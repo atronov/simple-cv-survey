@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Simple web-app to handle applicant's CV
+
+## What's under the hood
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+So all available Scripts from CRA work here.
 
-## Available Scripts
+## Motivation
 
-In the project directory, you can run:
+This app was quickly built to improve process of handling applicants' CVs. It helps to make decision of next steps with an applicant.
 
-### `npm start`
+It also can be used not only to deal with CVs. It can help when you deal with routine of making a positive or negative decision accordion to check-list.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Additionally, I tried [Recoil](https://recoiljs.org) during development. I also used [Ant Design](https://ant.design) components because I like them.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## User guide
 
-### `npm test`
+###  Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Open the survey page.
+- Set appropriate score for each question clicking at count of stars or sad face.
+- When completed, you see the decision (passed/failed) at the top of the page.
+- You can share result and details by click at copy icon. Now result text and share link are into your clipboard.
+- Obviously share link works only you hosted the page somewhere.
+- Or better try it yourself https://simple-cv-survey.website.yandexcloud.net
 
-### `npm run build`
+### Tuning
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- To change the questions go to src/data/questions.ts. Edit questions keeping the schema.
+- To change the passing score go to src/data/passingScore.ts.
+- For the sake of simplicity the app doesn't have any i18n lib or other lang detect. 
+To change texts or translations go src/texts/index.ts. There import right file with text, create new one or change existing.
