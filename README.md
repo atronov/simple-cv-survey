@@ -24,6 +24,8 @@ Additionally, I tried [Recoil](https://recoiljs.org) during development. I also 
 - Obviously share link works only you hosted the page somewhere.
 - Or better try it yourself https://simple-cv-survey.website.yandexcloud.net
 
+![image](https://user-images.githubusercontent.com/5829206/173688688-62287653-6e9e-46f9-9b0d-f2e654d26065.png)
+
 ### Tuning
 
 - To change the questions go to src/data/questions.ts. Edit questions keeping the schema.
