@@ -1,19 +1,19 @@
 .app {
-  margin: 0 auto;
-  max-width: 700px;
-  padding-bottom: 32px;
+    margin: 0 auto;
+    max-width: 700px;
+    padding-bottom: 32px;
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  z-index: 1;
-  padding-top: 12px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    padding-top: 12px;
 }
 
 .headerLine {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
